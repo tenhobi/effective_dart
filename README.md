@@ -40,10 +40,10 @@ Following lints have been considered and will not be enforced by this package:
 
 ## Badge
 
-Show the world you're following the *Effective Dart* guide → [![follows: effective dart](https://img.shields.io/badge/follows-effective_dart-40c4ff.svg)](https://github.com/tenhobi/effective_dart)
+Show the world you're following the *Effective Dart* guide → [![style: effective dart](https://img.shields.io/badge/style-effective_dart-40c4ff.svg)](https://github.com/tenhobi/effective_dart)
 
 ```md
-[![follows: effective dart](https://img.shields.io/badge/follows-effective_dart-40c4ff.svg)](https://github.com/tenhobi/effective_dart)
+[![style: effective dart](https://img.shields.io/badge/style-effective_dart-40c4ff.svg)](https://github.com/tenhobi/effective_dart)
 ```
 
 ## License
