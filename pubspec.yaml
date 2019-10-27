@@ -1,8 +1,9 @@
 name: effective_dart
-version: 1.0.0
 description: This package provides the lints according to the Effective Dart guide.
+version: 1.0.1
 author: Honza Bittner <git@honzabittner.cz>
-homepage: https://github.com/tenhobi/effective_dart
+repository: https://github.com/tenhobi/effective_dart
+issue_tracker: https://github.com/tenhobi/effective_dart/issues
 
 environment:
-  sdk: ">=2.1.1-dev.0.0 <3.0.0"
+  sdk: ">=2.0.0 <3.0.0"
