@@ -15,7 +15,7 @@ To use the lints add a dev dependency in your `pubspec.yaml`:
 
 ```yaml
 dev_dependencies:
-  effective_dart: ^1.0.0
+  effective_dart: ^1.1.0
 ```
 
 Then add an include in your `analysis_options.yaml` file:
@@ -27,16 +27,16 @@ include: package:effective_dart/analysis_options.yaml
 You can always specify a specific version instead:
 
 ```yaml
-include: package:effective_dart/analysis_options.1.0.0.yaml
+include: package:effective_dart/analysis_options.1.1.0.yaml
 ```
 
 ## Unused Lints
 
 Following lints have been considered and will not be enforced by this package:
 
-`lines_longer_than_80_chars` might be practical not to follow for many people.
-
-`unnecessary_getters` has been [disabled](https://github.com/dart-lang/linter/issues/23).
+- `lines_longer_than_80_chars` might be practical not to follow for many people
+- `unnecessary_getters` has been [disabled](https://github.com/dart-lang/linter/issues/23)
+- `comment_references` is way too restrictive and comment references are handled in different ways in tools ([see this issue](https://github.com/dart-lang/sdk/issues/36974))
 
 ## Badge
 
