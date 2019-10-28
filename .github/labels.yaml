@@ -1,0 +1,44 @@
+# TYPE
+
+- name: "bug"
+  color: "d73a4a"
+  description: "Something isn't working"
+- name: "enhancement"
+  color: "2ec9ff"
+  description: "New feature or request"
+- name: "documentation"
+  color: "0075ca"
+  description: "Improvements or additions to documentation"
+- name: "question"
+  color: "ff419d"
+  description: "Question"
+
+# ACTION
+
+- name: "help wanted"
+  color: "0e8a16"
+  description: "Extra attention is needed"
+- name: "feedback wanted"
+  color: "0e8a16"
+  description: "Looking for feedback from the community"
+- name: "waiting for response"
+  color: "fbca04"
+  description: "Waiting for follow up"
+- name: "investigating"
+  color: "fbca04"
+  description: "Investigating the issue"
+- name: "good first issue"
+  color: "008672"
+  description: "Investigating the issue"
+- name: "dependency"
+  color: "ff7619"
+  description: "This issue has an external dependency"
+
+# NEGATIVE
+
+- name: "duplicate"
+  color: "eeeeee"
+  description: "This issue or pull request already exists"
+- name: "wontfix"
+  color: "eeeeee"
+  description: "This will not be worked on"

@@ -1,0 +1,22 @@
+name: Create Labels
+
+on:
+  issues:
+    types: opened
+
+jobs:
+  labeler:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Run Labeler
+        uses: crazy-max/ghaction-github-labeler@v1
+        if: success()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          yaml_file: .github/labels.yaml
+          exclude: "['help*', '*issue']"
+          skip_delete: false
+          dry_run: false
