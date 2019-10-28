@@ -38,6 +38,41 @@ Following lints have been considered and will not be enforced by this package:
 - `unnecessary_getters` has been [disabled](https://github.com/dart-lang/linter/issues/23)
 - `comment_references` is way too restrictive and comment references are handled in different ways in tools ([see this issue](https://github.com/dart-lang/sdk/issues/36974))
 
+## Suppressing Lints
+
+There are situations when you want to suppress some lint. You can achieve that on multiple levels.
+
+We will go through examples how to suppress `public_member_api_docs` rule.
+
+### Line Level
+
+To suppress a specific rule on a line of code, you can put an `ignore` comment above the line of code.
+
+```dart
+// ignore: public_member_api_docs
+class MyClass {}
+```
+
+### File Level
+
+To suppress a specific rule on a file, you can put an `ignore_for_file` comment to the file:
+
+```text
+// ignore_for_file: public_member_api_docs
+```
+
+### Project Level
+
+To suppress a specific rule on a project, you can modify your `analysis_options.yaml` file.
+
+```yaml
+include: package:effective_dart/analysis_options.yaml
+
+linter:
+  rules:
+    public_member_api_docs: false
+```
+
 ## Badge
 
 Show the world you're following the *Effective Dart* guide → [![style: effective dart](https://img.shields.io/badge/style-effective_dart-40c4ff.svg)](https://github.com/tenhobi/effective_dart)
