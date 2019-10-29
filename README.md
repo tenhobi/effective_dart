@@ -24,7 +24,7 @@ Then add an include in your `analysis_options.yaml` file:
 include: package:effective_dart/analysis_options.yaml
 ```
 
-You can always specify a specific version instead:
+Or, if you using e.g. continuous builds, they will likely fail whenever a new version of `package:effective_dart` is released. To avoid this, specify a version of `analysis_options.yaml`:
 
 ```yaml
 include: package:effective_dart/analysis_options.1.1.0.yaml
@@ -40,13 +40,13 @@ Following lints have been considered and will not be enforced by this package:
 
 ## Suppressing Lints
 
-There are situations when you want to suppress some lint. You can achieve that on multiple levels.
+There are situations when you want to suppress a specific lint rule. You can suppress lints alone in your project on multiple levels. We will go through examples of how to suppress `public_member_api_docs` lint rule.
 
-We will go through examples how to suppress `public_member_api_docs` rule.
+> **Note**: this package tries to comply with all [*Effective Dart*](https://dart.dev/guides/language/effective-dart) guide rules. That means we generally do not want to disable a rule in this package if it works properly. Yet, if you think some rule should be disabled by this package, open an issue.
 
 ### Line Level
 
-To suppress a specific rule on a line of code, you can put an `ignore` comment above the line of code.
+To suppress a specific lint rule on a line of code, you can put an `ignore` comment above the line of code:
 
 ```dart
 // ignore: public_member_api_docs
@@ -55,15 +55,19 @@ class MyClass {}
 
 ### File Level
 
-To suppress a specific rule on a file, you can put an `ignore_for_file` comment to the file:
+To suppress a specific lint rule on a file, you can put an `ignore_for_file` comment to the file:
 
-```text
+```dart
 // ignore_for_file: public_member_api_docs
+
+class MyClass {}
+
+class MySecondClass {}
 ```
 
 ### Project Level
 
-To suppress a specific rule on a project, you can modify your `analysis_options.yaml` file.
+To suppress a specific lint rule on a project, you can modify your `analysis_options.yaml` file:
 
 ```yaml
 include: package:effective_dart/analysis_options.yaml
