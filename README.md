@@ -9,6 +9,8 @@ This package provides links that attempt to comply with all [*Effective Dart*](h
 
 > *Note*: This package is inspired by the [pedantic](https://github.com/dart-lang/pedantic) package, which contains lints internally used at Google.
 
+You can easily see all enabled rules on the [Supported Lint Rules](http://dart-lang.github.io/linter/lints/) site.
+
 ## Using the Lints
 
 To use the lints add a dev dependency in your `pubspec.yaml`:
