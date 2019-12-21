@@ -52,7 +52,7 @@ Following lints have been considered and will not be enforced by this package:
 
 ## Suppressing Lints
 
-There are situations when you want to suppress a specific lint rule. You can suppress lints alone in your project on multiple levels. We will go through examples of how to suppress `public_member_api_docs` lint rule.
+There are situations when you want to suppress a specific lint rule. You can suppress lints alone in your project on multiple levels. We will go through examples of how to suppress [`public_member_api_docs`](https://dart-lang.github.io/linter/lints/public_member_api_docs.html) lint rule.
 
 > **Note**: this package tries to comply with all [*Effective Dart*](https://dart.dev/guides/language/effective-dart) guide rules. That means we generally do not want to disable a rule in this package if it works properly. Yet, if you think some rule should be disabled by this package, open an issue.
 
