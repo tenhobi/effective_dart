@@ -32,13 +32,23 @@ Or, if you using e.g. continuous builds, they will likely fail whenever a new ve
 include: package:effective_dart/analysis_options.1.1.0.yaml
 ```
 
+## Consider lints
+
+Consider guidelines are practices that you might or might not want to follow, depending on circumstances, precedents, and your own preference.
+
+Following lints are not enforced by this package:
+
+- [`prefer_expression_function_bodies`](https://dart-lang.github.io/linter/lints/prefer_expression_function_bodies.html)
+- [`prefer_typing_uninitialized_variables`](https://dart-lang.github.io/linter/lints/prefer_typing_uninitialized_variables.html)
+- [`use_function_type_syntax_for_parameters`](https://dart-lang.github.io/linter/lints/use_function_type_syntax_for_parameters.html)
+
 ## Unused Lints
 
 Following lints have been considered and will not be enforced by this package:
 
-- `lines_longer_than_80_chars` might be practical not to follow for many people
-- `unnecessary_getters` has been [disabled](https://github.com/dart-lang/linter/issues/23)
-- `comment_references` is way too restrictive and comment references are handled in different ways in tools ([see this issue](https://github.com/dart-lang/sdk/issues/36974))
+- [`lines_longer_than_80_chars`](https://dart-lang.github.io/linter/lints/lines_longer_than_80_chars.html) might be practical not to follow for many people
+- [`unnecessary_getters`](https://dart-lang.github.io/linter/lints/unnecessary_getters.html) has been [disabled](https://github.com/dart-lang/linter/issues/23)
+- [`comment_references`](https://dart-lang.github.io/linter/lints/comment_references.html) is way too restrictive and comment references are handled in different ways in tools ([see this issue](https://github.com/dart-lang/sdk/issues/36974))
 
 ## Suppressing Lints
 
