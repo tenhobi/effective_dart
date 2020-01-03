@@ -2,14 +2,13 @@
 
 [![pub package](https://img.shields.io/pub/v/effective_dart.svg)](https://pub.dartlang.org/packages/effective_dart)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![style: effective dart](https://img.shields.io/badge/style-effective_dart-40c4ff.svg)](https://github.com/tenhobi/effective_dart)
 
 **Be consistent. Be brief.**
 
-This package provides lints that attempt to comply with all [*Effective Dart*](https://dart.dev/guides/language/effective-dart) guide rules.
+This package provides lints that attempt to comply with all [*Effective Dart*](https://dart.dev/guides/language/effective-dart) guide rules. You can easily see all enabled rules on the [Supported Lint Rules](http://dart-lang.github.io/linter/lints/) site.
 
-You can easily see all enabled rules on the [Supported Lint Rules](http://dart-lang.github.io/linter/lints/) site.
-
-*Note*: This package is inspired by the [pedantic](https://github.com/dart-lang/pedantic) package, which contains lints internally used at Google.
+**Note**: This package is inspired by the [pedantic](https://github.com/dart-lang/pedantic) package, which contains lints internally used at Google.
 
 ## Using the Lints
 
@@ -46,7 +45,6 @@ Following lints are not enforced by this package:
 
 Following lints have been considered and will not be enforced by this package:
 
-- [`lines_longer_than_80_chars`](https://dart-lang.github.io/linter/lints/lines_longer_than_80_chars.html) might be practical not to follow for many people
 - [`unnecessary_getters`](https://dart-lang.github.io/linter/lints/unnecessary_getters.html) has been [disabled](https://github.com/dart-lang/linter/issues/23)
 - [`comment_references`](https://dart-lang.github.io/linter/lints/comment_references.html) is way too restrictive and comment references are handled in different ways in tools ([see this issue](https://github.com/dart-lang/sdk/issues/36974))
 
