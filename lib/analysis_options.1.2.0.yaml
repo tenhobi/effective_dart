@@ -2,14 +2,14 @@ linter:
   rules:
     # STYLE
     - camel_case_types
-    - camel_case_extensions
+    - camel_case_extensions # TODO
     - library_names
     - file_names
     - library_prefixes
     - non_constant_identifier_names
     - constant_identifier_names # prefer
     - directives_ordering
-    - lines_longer_than_80_chars # avoid
+    - lines_longer_than_80_chars # avoid # TODO
     - curly_braces_in_flow_control_structures
 
     # DOCUMENTATION
@@ -19,9 +19,9 @@ linter:
     #- comment_references # Unused because https://github.com/dart-lang/sdk/issues/36974
 
     # USAGE
-    - implementation_imports
+    - implementation_imports # TODO
     - avoid_relative_lib_imports # prefer
-    - prefer_relative_imports # prefer
+    - prefer_relative_imports # prefer # TODO
     - prefer_adjacent_string_concatenation
     - prefer_interpolation_to_compose_strings # prefer
     - unnecessary_brace_in_string_interps # avoid
@@ -42,14 +42,14 @@ linter:
     - unnecessary_new
     - unnecessary_const
     - avoid_catches_without_on_clauses # avoid
-    - avoid_catching_errors
+    - avoid_catching_errors # TODO
     - use_rethrow_when_possible
 
     # DESIGN
     - use_to_and_as_if_applicable # prefer
     - one_member_abstracts # avoid
     - avoid_classes_with_only_static_members # avoid
-    - prefer_mixin
+    - prefer_mixin # TODO
     - prefer_final_fields # prefer
     - use_setters_to_change_properties
     - avoid_setters_without_getters
@@ -58,12 +58,12 @@ linter:
     - type_annotate_public_apis # prefer
     #- prefer_typing_uninitialized_variables # consider
     - omit_local_variable_types # avoid
-    - avoid_types_on_closure_parameters # avoid
+    - avoid_types_on_closure_parameters # avoid # TODO
     - avoid_return_types_on_setters # avoid
     - prefer_generic_function_type_aliases
     - avoid_private_typedef_functions # prefer
     #- use_function_type_syntax_for_parameters # consider
     - avoid_positional_boolean_parameters # avoid
     - hash_and_equals
-    - avoid_equals_and_hash_code_on_mutable_classes # avoid
+    - avoid_equals_and_hash_code_on_mutable_classes # avoid # TODO
     - avoid_null_checks_in_equality_operators
