@@ -31,7 +31,7 @@ Or, if you using e.g. continuous builds, they will likely fail whenever a new ve
 include: package:effective_dart/analysis_options.1.1.0.yaml
 ```
 
-## Consider lints
+## Consider Lints
 
 Consider guidelines are practices that you might or might not want to follow, depending on circumstances, precedents, and your own preference.
 
