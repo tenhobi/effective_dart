@@ -1,6 +1,6 @@
 name: effective_dart
-description: The set of rules corresponding to the Effective Dart guide.
-version: 1.2.0
+description: Linter rules corresponding to the guidelines in Effective Dart.
+version: 1.2.1
 author: Honza Bittner <git@tenhobi.cz>
 repository: https://github.com/tenhobi/effective_dart
 issue_tracker: https://github.com/tenhobi/effective_dart/issues
