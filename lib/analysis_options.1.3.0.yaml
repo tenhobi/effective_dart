@@ -1,0 +1,14 @@
+# effective_dart version 1.3.0
+linter:
+  rules:
+    # STYLE
+    - camel_case_types # do
+    - camel_case_extensions # do
+    - library_names # do
+    - file_names # do
+    - library_prefixes # do
+    - non_constant_identifier_names # do
+    - constant_identifier_names # prefer
+    - directives_ordering # do
+    - lines_longer_than_80_chars # avoid
+    - curly_braces_in_flow_control_structures # do

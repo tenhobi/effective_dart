@@ -1,0 +1,56 @@
+# effective_dart version 1.3.0
+effective_dart:
+  camel_case_types:
+    guide: style
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/style#do-name-types-using-uppercamelcase
+  camel_case_extensions:
+    guide: style
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/style#do-name-extensions-using-uppercamelcase
+  library_names:
+    guide: style
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/style#do-name-libraries-and-source-files-using-lowercase_with_underscores
+  file_names:
+    guide: style
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/style#do-name-libraries-and-source-files-using-lowercase_with_underscores
+  library_prefixes:
+    guide: style
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/style#do-name-import-prefixes-using-lowercase_with_underscores
+  non_constant_identifier_names:
+    guide: style
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/style#do-name-other-identifiers-using-lowercamelcase
+  constant_identifier_names:
+    guide: style
+    severity: prefer
+    references:
+      - https://dart.dev/guides/language/effective-dart/style#prefer-using-lowercamelcase-for-constant-names
+  directives_ordering:
+    guide: style
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/style#do-place-dart-imports-before-other-imports
+      - https://dart.dev/guides/language/effective-dart/style#do-place-package-imports-before-relative-imports
+      - https://dart.dev/guides/language/effective-dart/style#prefer-placing-third-party-package-imports-before-other-imports
+      - https://dart.dev/guides/language/effective-dart/style#do-specify-exports-in-a-separate-section-after-all-imports
+      - https://dart.dev/guides/language/effective-dart/style#do-sort-sections-alphabetically
+  lines_longer_than_80_chars:
+    guide: style
+    severity: avoid
+    references:
+      - https://dart.dev/guides/language/effective-dart/style#avoid-lines-longer-than-80-characters
+  curly_braces_in_flow_control_structures:
+    guide: style
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/style#do-use-curly-braces-for-all-flow-control-structures
