@@ -1,0 +1,19 @@
+name: CI
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    container:
+      image:  google/dart:latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install dependencies
+        run: pub get
+      - name: Format
+        run: dartfmt -w .
+      - name: Analyze
+        run: dartanalyzer --fatal-infos --fatal-warnings .
+#      - name: Run tests
+#        run: pub run test
