@@ -26,8 +26,10 @@ linter:
   rules:
 ''');
 
+    // Sort rules by guide.
     rules.sort((a, b) => a.guide.index.compareTo(b.guide.index));
     var currentGuide = rules.first.guide;
+
     _buffer.writeln('    # ${guideToString(currentGuide).toUpperCase()}');
     for (final rule in rules) {
       if (rule.guide != currentGuide) {
@@ -37,8 +39,11 @@ linter:
         _buffer.writeln('    # ${guideToString(currentGuide).toUpperCase()}');
       }
 
-      _buffer
-          .writeln('    - ${rule.name} # ${severityToString(rule.severity)}');
+      _buffer.write(
+          // ignore: lines_longer_than_80_chars
+          '    ${(rule.disabled || rule.severity == Severity.consider) ? '#' : ''}');
+      _buffer.write('- ${rule.name} # ${severityToString(rule.severity)}');
+      _buffer.writeln('${rule.disabled ? ' # ${rule.disabledReason}' : ''}');
     }
 
     return _buffer.toString();

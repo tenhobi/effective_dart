@@ -34,6 +34,11 @@ effective_dart:
         _buffer
             .writeln('      - ${referenceInGuideToUrl(rule.guide, reference)}');
       }
+
+      if (rule.disabled) {
+        _buffer.writeln('    disabled: true');
+        _buffer.writeln('    disabled_reason: "${rule.disabledReason}"');
+      }
     }
 
     return _buffer.toString();

@@ -54,3 +54,259 @@ effective_dart:
     severity: do
     references:
       - https://dart.dev/guides/language/effective-dart/style#do-use-curly-braces-for-all-flow-control-structures
+  slash_for_doc_comments:
+    guide: documentation
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/documentation#do-use--doc-comments-to-document-members-and-types
+  package_api_docs:
+    guide: documentation
+    severity: prefer
+    references:
+      - https://dart.dev/guides/language/effective-dart/documentation#prefer-writing-doc-comments-for-public-apis
+  public_member_api_docs:
+    guide: documentation
+    severity: prefer
+    references:
+      - https://dart.dev/guides/language/effective-dart/documentation#prefer-writing-doc-comments-for-public-apis
+  comment_references:
+    guide: documentation
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/documentation#do-use-square-brackets-in-doc-comments-to-refer-to-in-scope-identifiers
+    disabled: true
+    disabled_reason: "Unused because https://github.com/dart-lang/sdk/issues/36974"
+  unnecessary_brace_in_string_interps:
+    guide: usage
+    severity: avoid
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#avoid-using-curly-braces-in-interpolation-when-not-needed
+  prefer_expression_function_bodies:
+    guide: usage
+    severity: consider
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#consider-using--for-simple-members
+  prefer_relative_imports:
+    guide: usage
+    severity: prefer
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#prefer-relative-paths-when-importing-libraries-within-your-own-packages-lib-directory
+  prefer_adjacent_string_concatenation:
+    guide: usage
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#do-use-adjacent-strings-to-concatenate-string-literals
+  prefer_interpolation_to_compose_strings:
+    guide: usage
+    severity: prefer
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#prefer-using-interpolation-to-compose-strings-and-values
+  implementation_imports:
+    guide: usage
+    severity: don't
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#dont-import-libraries-that-are-inside-the-src-directory-of-another-package
+  prefer_collection_literals:
+    guide: usage
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#do-use-collection-literals-when-possible
+  avoid_function_literals_in_foreach_calls:
+    guide: usage
+    severity: avoid
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#avoid-using-iterableforeach-with-a-function-literal
+  prefer_iterable_whereType:
+    guide: usage
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#do-use-wheretype-to-filter-a-collection-by-type
+  prefer_function_declarations_over_variables:
+    guide: usage
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#do-use-a-function-declaration-to-bind-a-function-to-a-name
+  unnecessary_lambdas:
+    guide: usage
+    severity: don't
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#dont-create-a-lambda-when-a-tear-off-will-do
+  prefer_equal_for_default_values:
+    guide: usage
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#do-use--to-separate-a-named-parameter-from-its-default-value
+  avoid_init_to_null:
+    guide: usage
+    severity: don't
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#dont-use-an-explicit-default-value-of-null
+  unnecessary_getters_setters:
+    guide: usage
+    severity: don't
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#dont-wrap-a-field-in-a-getter-and-setter-unnecessarily
+  unnecessary_getters:
+    guide: usage
+    severity: prefer
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#prefer-using-a-final-field-to-make-a-read-only-property
+    disabled: true
+    disabled_reason: "Disabled pending fix: https://github.com/dart-lang/linter/issues/23"
+  avoid_relative_lib_imports:
+    guide: usage
+    severity: prefer
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#prefer-relative-paths-when-importing-libraries-within-your-own-packages-lib-directory
+  unnecessary_this:
+    guide: usage
+    severity: don't
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#dont-use-this-when-not-needed-to-avoid-shadowing
+  prefer_initializing_formals:
+    guide: usage
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#do-use-initializing-formals-when-possible
+  type_init_formals:
+    guide: usage
+    severity: don't
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#dont-type-annotate-initializing-formals
+  empty_constructor_bodies:
+    guide: usage
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#do-use--instead-of--for-empty-constructor-bodies
+  unnecessary_new:
+    guide: usage
+    severity: don't
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#dont-use-new
+  unnecessary_const:
+    guide: usage
+    severity: don't
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#dont-use-const-redundantly
+  avoid_catches_without_on_clauses:
+    guide: usage
+    severity: avoid
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#avoid-catches-without-on-clauses
+  avoid_catching_errors:
+    guide: usage
+    severity: don't
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#dont-explicitly-catch-error-or-types-that-implement-it
+  use_rethrow_when_possible:
+    guide: usage
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/usage#do-use-rethrow-to-rethrow-a-caught-exception
+  avoid_null_checks_in_equality_operators:
+    guide: design
+    severity: don't
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#dont-check-for-null-in-custom--operators
+  one_member_abstracts:
+    guide: design
+    severity: avoid
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#avoid-defining-a-one-member-abstract-class-when-a-simple-function-will-do
+  avoid_classes_with_only_static_members:
+    guide: design
+    severity: avoid
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#avoid-defining-a-class-that-contains-only-static-members
+  prefer_mixin:
+    guide: design
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#do-use-mixin-to-define-a-mixin-type
+      - https://dart.dev/guides/language/effective-dart/design#avoid-mixing-in-a-class-that-isnt-intended-to-be-a-mixin
+  avoid_equals_and_hash_code_on_mutable_classes:
+    guide: design
+    severity: avoid
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#avoid-defining-custom-equality-for-mutable-classes
+  use_setters_to_change_properties:
+    guide: design
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#do-use-setters-for-operations-that-conceptually-change-properties
+  avoid_setters_without_getters:
+    guide: design
+    severity: don't
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#dont-define-a-setter-without-a-corresponding-getter
+  avoid_returning_null:
+    guide: design
+    severity: avoid
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#avoid-returning-null-from-members-whose-return-type-is-bool-double-int-or-num
+  avoid_returning_this:
+    guide: design
+    severity: avoid
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#avoid-returning-this-from-methods-just-to-enable-a-fluent-interface
+  type_annotate_public_apis:
+    guide: design
+    severity: prefer
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#prefer-type-annotating-public-fields-and-top-level-variables-if-the-type-isnt-obvious
+  prefer_typing_uninitialized_variables:
+    guide: design
+    severity: consider
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#consider-type-annotating-private-fields-and-top-level-variables-if-the-type-isnt-obvious
+  omit_local_variable_types:
+    guide: design
+    severity: avoid
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#avoid-type-annotating-initialized-local-variables
+  avoid_types_on_closure_parameters:
+    guide: design
+    severity: avoid
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#avoid-annotating-inferred-parameter-types-on-function-expressions
+  avoid_return_types_on_setters:
+    guide: design
+    severity: don't
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#dont-specify-a-return-type-for-a-setter
+  prefer_generic_function_type_aliases:
+    guide: design
+    severity: don't
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#dont-use-the-legacy-typedef-syntax
+  avoid_private_typedef_functions:
+    guide: design
+    severity: prefer
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#prefer-inline-function-types-over-typedefs
+  use_function_type_syntax_for_parameters:
+    guide: design
+    severity: consider
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#consider-using-function-type-syntax-for-parameters
+  avoid_positional_boolean_parameters:
+    guide: design
+    severity: avoid
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#avoid-positional-boolean-parameters
+  hash_and_equals:
+    guide: design
+    severity: do
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#do-override-hashcode-if-you-override-
+  prefer_final_fields:
+    guide: design
+    severity: prefer
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#prefer-making-fields-and-top-level-variables-final
+  use_to_and_as_if_applicable:
+    guide: design
+    severity: prefer
+    references:
+      - https://dart.dev/guides/language/effective-dart/design#prefer-naming-a-method-to___-if-it-copies-the-objects-state-to-a-new-object
+      - https://dart.dev/guides/language/effective-dart/design#prefer-naming-a-method-as___-if-it-returns-a-different-representation-backed-by-the-original-object

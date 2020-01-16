@@ -13,6 +13,8 @@ You can easily see all enabled rules on the [Supported Lint Rules][] site.
 **Note**: This package is inspired by the [pedantic][] package,
 which contains lints internally used at Google.
 
+This package also provides additional markup data for tools such us [Linter][].
+
 ## Using the Lints
 
 To use the lints add a dev dependency in your `pubspec.yaml`:
@@ -125,3 +127,4 @@ Licensed under the [MIT License](LICENSE).
 [pedantic]: https://github.com/dart-lang/pedantic
 [Supported Lint Rules]: http://dart-lang.github.io/linter/lints
 [badge]: https://img.shields.io/badge/style-effective_dart-40c4ff.svg
+[Linter]: https://github.com/dart-lang/linter

@@ -7,9 +7,19 @@ import 'package:effective_dart/src/rules/version.dart';
 void main() => generateAnalysisOptions();
 
 void generateAnalysisOptions() {
-  print('Generating metadata file.');
+  const fileName = 'analysis_options';
+  const filePath = 'lib/$fileName';
+  const fileExtension = 'yaml';
+
+  print('Generating analysis options file.');
   final generator = AnalysisOptionsGenerator(version: version, rules: allRules);
-  final file = File('lib/analysis_options.$version.yaml');
+  final file = File('$filePath.$version.$fileExtension');
   file.writeAsStringSync(generator.generate());
-  print('Done');
+
+  print('Updating base file.');
+  final baseFile = File('$filePath.$fileExtension');
+  baseFile.writeAsStringSync(
+      'include: package:effective_dart/$fileName.$version.$fileExtension');
+
+  print('Done.');
 }
