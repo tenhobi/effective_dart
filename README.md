@@ -1,5 +1,6 @@
 # effective_dart
 
+[![Actions status](https://github.com/tenhobi/effective_dart/workflows/CI/badge.svg)](https://github.com/tenhobi/effective_dart/actions)
 [![pub package](https://img.shields.io/pub/v/effective_dart.svg)](https://pub.dartlang.org/packages/effective_dart)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![style: effective dart][badge]](https://github.com/tenhobi/effective_dart)
