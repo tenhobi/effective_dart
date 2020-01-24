@@ -114,7 +114,7 @@ Show the world you're following *Effective Dart* →
 [![style: effective dart][badge]](https://github.com/tenhobi/effective_dart)
 
 ```md
-[![style: effective dart][https://img.shields.io/badge/style-effective_dart-40c4ff.svg]](https://github.com/tenhobi/effective_dart)
+[![style: effective dart](https://img.shields.io/badge/style-effective_dart-40c4ff.svg)](https://github.com/tenhobi/effective_dart)
 ```
 
 ## License
