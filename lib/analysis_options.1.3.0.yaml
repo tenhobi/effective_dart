@@ -68,3 +68,73 @@ linter:
     - hash_and_equals # do
     - prefer_final_fields # prefer
     - use_to_and_as_if_applicable # prefer
+
+analyzer:
+  errors:
+    # STYLE
+    camel_case_types: error
+    camel_case_extensions: error
+    library_names: error
+    file_names: error
+    library_prefixes: error
+    non_constant_identifier_names: error
+    constant_identifier_names: warning
+    directives_ordering: error
+    lines_longer_than_80_chars: warning
+    curly_braces_in_flow_control_structures: error
+
+    # DOCUMENTATION
+    slash_for_doc_comments: error
+    package_api_docs: warning
+    public_member_api_docs: warning
+    #comment_references: error
+
+    # USAGE
+    unnecessary_brace_in_string_interps: warning
+    #prefer_expression_function_bodies: info
+    prefer_relative_imports: warning
+    prefer_adjacent_string_concatenation: error
+    prefer_interpolation_to_compose_strings: warning
+    implementation_imports: error
+    prefer_collection_literals: error
+    avoid_function_literals_in_foreach_calls: warning
+    prefer_iterable_whereType: error
+    prefer_function_declarations_over_variables: error
+    unnecessary_lambdas: error
+    prefer_equal_for_default_values: error
+    avoid_init_to_null: error
+    unnecessary_getters_setters: error
+    #unnecessary_getters: warning
+    avoid_relative_lib_imports: warning
+    unnecessary_this: error
+    prefer_initializing_formals: error
+    type_init_formals: error
+    empty_constructor_bodies: error
+    unnecessary_new: error
+    unnecessary_const: error
+    avoid_catches_without_on_clauses: warning
+    avoid_catching_errors: error
+    use_rethrow_when_possible: error
+
+    # DESIGN
+    avoid_null_checks_in_equality_operators: error
+    one_member_abstracts: warning
+    avoid_classes_with_only_static_members: warning
+    prefer_mixin: error
+    avoid_equals_and_hash_code_on_mutable_classes: warning
+    use_setters_to_change_properties: error
+    avoid_setters_without_getters: error
+    avoid_returning_null: warning
+    avoid_returning_this: warning
+    type_annotate_public_apis: warning
+    #prefer_typing_uninitialized_variables: info
+    omit_local_variable_types: warning
+    avoid_types_on_closure_parameters: warning
+    avoid_return_types_on_setters: error
+    prefer_generic_function_type_aliases: error
+    avoid_private_typedef_functions: warning
+    #use_function_type_syntax_for_parameters: info
+    avoid_positional_boolean_parameters: warning
+    hash_and_equals: error
+    prefer_final_fields: warning
+    use_to_and_as_if_applicable: warning

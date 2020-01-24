@@ -32,3 +32,20 @@ String severityToString(Severity severity) {
       return 'consider';
   }
 }
+
+///
+// ignore: missing_return
+String severityToAnalyzerError(Severity severity) {
+  switch (severity) {
+    case Severity.doit:
+      return 'error';
+    case Severity.dont:
+      return "error";
+    case Severity.prefer:
+      return 'warning';
+    case Severity.avoid:
+      return 'warning';
+    case Severity.consider:
+      return 'info';
+  }
+}

@@ -8,9 +8,6 @@ import 'generator.dart';
 ///
 class AnalysisOptionsGenerator extends Generator {
   ///
-  final _buffer = StringBuffer();
-
-  ///
   AnalysisOptionsGenerator({
     @required String version,
     @required List<LintRule> rules,
@@ -19,33 +16,86 @@ class AnalysisOptionsGenerator extends Generator {
   ///
   @override
   String generate() {
-    _buffer.clear();
-    _buffer.write('''
-# effective_dart version $version
+    final buffer = StringBuffer('# effective_dart version $version\n');
+
+    // Sort rules by guide.
+    rules.sort((a, b) => a.guide.index.compareTo(b.guide.index));
+
+    buffer.write(_generateLinter(rules));
+    buffer.writeln();
+    buffer.write(_generateAnalyzer(rules));
+
+    return buffer.toString();
+  }
+
+  String _generateLinter(List<LintRule> rules) {
+    final buffer = StringBuffer();
+    buffer.write('''
 linter:
   rules:
 ''');
 
-    // Sort rules by guide.
-    rules.sort((a, b) => a.guide.index.compareTo(b.guide.index));
     var currentGuide = rules.first.guide;
 
-    _buffer.writeln('    # ${guideToString(currentGuide).toUpperCase()}');
+    buffer.writeln('    # ${guideToString(currentGuide).toUpperCase()}');
     for (final rule in rules) {
       if (rule.guide != currentGuide) {
         currentGuide = rule.guide;
 
-        _buffer.writeln();
-        _buffer.writeln('    # ${guideToString(currentGuide).toUpperCase()}');
+        buffer.writeln();
+        buffer.writeln('    # ${guideToString(currentGuide).toUpperCase()}');
       }
 
-      _buffer.write(
-          // ignore: lines_longer_than_80_chars
-          '    ${(rule.disabled || rule.severity == Severity.consider) ? '#' : ''}');
-      _buffer.write('- ${rule.name} # ${severityToString(rule.severity)}');
-      _buffer.writeln('${rule.disabled ? ' # ${rule.disabledReason}' : ''}');
+      // An indentation for the line.
+      buffer.write('    ');
+
+      // Should the rule be dissabled or ignored?
+      if (rule.disabled || rule.severity == Severity.consider) {
+        buffer.write('#');
+      }
+
+      buffer.write('- ${rule.name} # ${severityToString(rule.severity)}');
+
+      // Each line should end with a break line.
+      if (rule.disabled) {
+        buffer.writeln(' # ${rule.disabledReason}');
+      } else {
+        buffer.writeln();
+      }
     }
 
-    return _buffer.toString();
+    return buffer.toString();
+  }
+
+  String _generateAnalyzer(List<LintRule> rules) {
+    final buffer = StringBuffer();
+    buffer.write('''
+analyzer:
+  errors:
+''');
+
+    var currentGuide = rules.first.guide;
+
+    buffer.writeln('    # ${guideToString(currentGuide).toUpperCase()}');
+    for (final rule in rules) {
+      if (rule.guide != currentGuide) {
+        currentGuide = rule.guide;
+
+        buffer.writeln();
+        buffer.writeln('    # ${guideToString(currentGuide).toUpperCase()}');
+      }
+
+      // An indentation for the line.
+      buffer.write('    ');
+
+      // Should the error be dissabled or ignored?
+      if (rule.disabled || rule.severity == Severity.consider) {
+        buffer.write('#');
+      }
+
+      buffer.writeln('${rule.name}: ${severityToAnalyzerError(rule.severity)}');
+    }
+
+    return buffer.toString();
   }
 }
