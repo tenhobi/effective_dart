@@ -2,6 +2,10 @@
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 1.2.2
+
+- Temporary fix of [#12](https://github.com/tenhobi/effective_dart/issues/12)
+
 ## 1.2.1
 
 - Applied [Semantic Line Breaks](https://sembr.org)

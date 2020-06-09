@@ -1,10 +1,9 @@
 name: effective_dart
+version: 1.2.2
 description: Linter rules corresponding to the guidelines in Effective Dart.
-version: 1.2.1
-author: Honza Bittner <git@tenhobi.cz>
+homepage: https://github.com/tenhobi/effective_dart
 repository: https://github.com/tenhobi/effective_dart
 issue_tracker: https://github.com/tenhobi/effective_dart/issues
-homepage: https://github.com/tenhobi/effective_dart
 
 environment:
   sdk: '>=2.0.0 <3.0.0'
