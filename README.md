@@ -2,7 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/effective_dart.svg)](https://pub.dartlang.org/packages/effective_dart)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![style: effective dart][badge]](https://github.com/tenhobi/effective_dart)
+[![style: effective dart][badge]][badge_link]
 
 **Be consistent. Be brief.**
 
@@ -111,10 +111,10 @@ linter:
 ## Badge
 
 Show the world you're following *Effective Dart* →
-[![style: effective dart][badge]](https://github.com/tenhobi/effective_dart)
+[![style: effective dart][badge]][badge_link]
 
 ```md
-[![style: effective dart](https://img.shields.io/badge/style-effective_dart-40c4ff.svg)](https://github.com/tenhobi/effective_dart)
+[![style: effective dart](https://img.shields.io/badge/style-effective_dart-40c4ff.svg)](https://pub.dev/packages/effective_dart)
 ```
 
 ## License
@@ -125,3 +125,4 @@ Licensed under the [MIT License](LICENSE).
 [pedantic]: https://github.com/dart-lang/pedantic
 [Supported Lint Rules]: http://dart-lang.github.io/linter/lints
 [badge]: https://img.shields.io/badge/style-effective_dart-40c4ff.svg
+[badge_link]: https://pub.dev/packages/effective_dart
