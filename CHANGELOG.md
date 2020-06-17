@@ -2,6 +2,10 @@
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 1.2.3
+
+- Remove dependency on github repository for the badge
+
 ## 1.2.2
 
 - Temporary fix of [#12](https://github.com/tenhobi/effective_dart/issues/12)
