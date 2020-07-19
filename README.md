@@ -7,7 +7,7 @@
 **Be consistent. Be brief.**
 
 This package provides linter rules corresponding to the guidelines in
-*[Effective Dart][]*.
+_[Effective Dart][]_.
 You can easily see all enabled rules on the [Supported Lint Rules][] site.
 
 **Note**: This package is inspired by the [pedantic][] package,
@@ -53,10 +53,10 @@ Following lints are not enforced by this package:
 Following lints have been considered and will not be enforced by this package:
 
 - [`unnecessary_getters`](https://dart-lang.github.io/linter/lints/unnecessary_getters.html)
-has been [disabled](https://github.com/dart-lang/linter/issues/23)
+  has been [disabled](https://github.com/dart-lang/linter/issues/23)
 - [`comment_references`](https://dart-lang.github.io/linter/lints/comment_references.html)
-is way too restrictive and comment references are handled in different ways
-in tools ([see this issue](https://github.com/dart-lang/sdk/issues/36974))
+  is way too restrictive and comment references are handled in different ways
+  in tools ([see this issue](https://github.com/dart-lang/sdk/issues/36974))
 
 ## Suppressing Lints
 
@@ -67,7 +67,7 @@ We will go through examples of how to suppress
 lint rule.
 
 **Note**: this package provides linter rules corresponding to the guidelines
-in *[Effective Dart][]*.
+in _[Effective Dart][]_.
 That means we generally do not want to disable a rule in this package
 if it works properly.
 Yet, if you think some rule should be disabled by this package, open an issue.
@@ -110,7 +110,7 @@ linter:
 
 ## Badge
 
-Show the world you're following *Effective Dart* →
+Show the world you're following _Effective Dart_ →
 [![style: effective dart][badge]][badge_link]
 
 ```md
@@ -121,8 +121,8 @@ Show the world you're following *Effective Dart* →
 
 Licensed under the [MIT License](LICENSE).
 
-[Effective Dart]: https://dart.dev/guides/language/effective-dart
+[effective dart]: https://dart.dev/guides/language/effective-dart
 [pedantic]: https://github.com/dart-lang/pedantic
-[Supported Lint Rules]: http://dart-lang.github.io/linter/lints
+[supported lint rules]: https://dart-lang.github.io/linter/lints
 [badge]: https://img.shields.io/badge/style-effective_dart-40c4ff.svg
 [badge_link]: https://pub.dev/packages/effective_dart
