@@ -1,6 +1,6 @@
 # Changelog
 
-This project adheres to [Semantic Versioning](http://semver.org).
+This project adheres to [Semantic Versioning](https://semver.org).
 
 ## 1.2.3
 
