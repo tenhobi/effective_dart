@@ -2,6 +2,10 @@
 
 This project adheres to [Semantic Versioning](https://semver.org).
 
+## 1.2.4
+
+- Comply with the new Pub score system
+
 ## 1.2.3
 
 - Remove dependency on github repository for the badge
