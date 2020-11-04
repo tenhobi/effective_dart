@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](https://semver.org).
 
+## 1.3.0
+
+- Added rule `prefer_is_empty`
+- Added rule `prefer_is_not_empty`
+
 ## 1.2.4
 
 - Comply with the new Pub score system

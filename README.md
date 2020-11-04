@@ -19,7 +19,7 @@ To use the lints add a dev dependency in your `pubspec.yaml`:
 
 ```yaml
 dev_dependencies:
-  effective_dart: ^1.2.0
+  effective_dart: ^1.3.0
 ```
 
 Then add an include in your `analysis_options.yaml` file:
@@ -34,7 +34,7 @@ is released.
 To avoid this, specify a version of `analysis_options.yaml`:
 
 ```yaml
-include: package:effective_dart/analysis_options.1.2.0.yaml
+include: package:effective_dart/analysis_options.1.3.0.yaml
 ```
 
 ## Consider Lints
