@@ -2,6 +2,10 @@
 
 This project adheres to [Semantic Versioning](https://semver.org).
 
+## 1.3.1
+
+- Bump sdk version to support null safety.
+
 ## 1.3.0
 
 - Added rule `prefer_is_empty`
